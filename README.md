@@ -2,10 +2,10 @@
 Trivia game for raspberry pico microcontroller
 
 
-# Product
+## Product
 Three buttons each w/ 1x yellow LED, 2x red LEDs (wrong answer), 2x green LEDs (right answer)
 
-# Gameplay
+## Gameplay
 Player selects game mode (Normal, Practice)
 Question shows up on console
 Button LEDs start blinking, waiting for user input
