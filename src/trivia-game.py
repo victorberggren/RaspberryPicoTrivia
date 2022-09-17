@@ -117,11 +117,6 @@ def turnOffButtonLeds():
     buttonBLed.off()
     buttonCLed.off()
 
-def turnOnButtonLeds():
-    buttonALed.on()
-    buttonBLed.on()
-    buttonCLed.on()
-
 def turnOnIRQ():
     buttonAInputPin.irq(trigger=Pin.IRQ_RISING, handler=clickedA)
     buttonBInputPin.irq(trigger=Pin.IRQ_RISING, handler=clickedB)
