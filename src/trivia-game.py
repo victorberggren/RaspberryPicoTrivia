@@ -81,30 +81,29 @@ def triggerAnswerLights(leds):
 
 def clickedA(pin):
     global selectedAnswer
-    timer.deinit()
-    turnOffButtonLeds()
+    turnOffTimer()
     buttonALed.on()
-    turnOffIRQ()
     selectedAnswer = "A"
     handleSelectAnswer()
 
 def clickedB(pin):
     global selectedAnswer
-    timer.deinit()
-    turnOffButtonLeds()
+    turnOffTimer()
     buttonBLed.on()
-    turnOffIRQ()
     selectedAnswer = "B"
     handleSelectAnswer()
 
 def clickedC(pin):
     global selectedAnswer
-    timer.deinit()
-    turnOffButtonLeds()
+    turnOffTimer()
     buttonCLed.on()
-    turnOffIRQ()
     selectedAnswer = "C"
     handleSelectAnswer()
+
+def turnOffTimer():
+    timer.deinit()
+    turnOffButtonLeds()
+    turnOffIRQ()
 
 def handleSelectAnswer():
     if correctAnswer == selectedAnswer:
